@@ -1,0 +1,352 @@
+/*
+
+Theme Name: Gravura
+Theme URI: http://gravura1.tk
+Version: 1.2.7
+Description: Gravura Theme
+Author: Anthony Borges
+Author URI: http://magicmedia.com.ve
+Tags: light, one-column, two-columns, three-columns, right-sidebar, left-sidebar, fixed-width, flexible-width, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+
+
+*/
+
+/* --- ELEMENT reset -------------------------------------------------*/
+body,h1,h2,h3,h4,h5,ul,li,p,img,fieldset,input,table {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow-x: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 span,h2 span,h3 span {
+	display: none;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+em {
+	font-style: normal;
+}
+
+/* --- CHARSET definition-------------------------------------------------*/
+@CHARSET "UTF-8";
+
+/* --- BASIC definition -----------------------------------------------*/
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+	overflow-y: none;
+	background: #DBDABB;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* --- FONT definition -------------------------------------------------*/
+
+.archn {
+	font-family: 'Arbutus Slab', serif;
+}
+
+/*TEXT definition*/
+
+.txt-red {
+	color: #732202;
+}
+
+.txt-gre {
+	color: #444;
+}
+
+.txt-gra {
+	color: #363636;
+}
+
+.txt-gra-d {
+	color: #242424;
+}
+
+.txt-center {
+	text-align: center;
+}
+
+.txt-right {
+	text-align: right;
+}
+
+.f-mini {
+	font-size: 10px;
+}
+
+.f-med {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.f-big {
+	font-size: 17px;
+	line-height: 15px;
+	overflow: hidden;
+}
+
+.f-bigger {
+	font-size: 30px;
+}
+
+.f-bold {
+	font-weight: bold;
+}
+
+.f-normal {
+	font-weight: normal;
+}
+
+/*CONTAINER definition*/
+.container.cont-gravura {
+	background-image: url(../../images/frontend/gravura-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	max-width: 2000px;
+}
+
+.bodycont {	
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.bodybg {
+	background-image: url(../../images/frontend/bg-rep.jpg);
+	background-repeat: repeat;
+	background-size: auto;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 5% 0 2% 0;
+	padding-bottom: 1%;
+}
+
+/*HEADER definition*/
+.header-content {
+    background: none repeat scroll 0 0 #EADDB9;
+    border-bottom: 1px solid #B29B53;
+    border-top: 1px solid #D4B348;
+    float: left;
+    height: auto;
+    margin: 1% 0 0 1%;
+    position: relative;
+    width: 98%;
+    z-index: 1;
+}
+
+.logo-gravura {
+	width: 16%;
+	float: left;
+	margin-left: 42%;
+	position: relative;
+}
+
+
+/*NAV definition*/
+.nav {
+	float: left;
+	clear: left;
+	margin: -15% 0 1.3% 3%;
+    position: relative;
+    width: 98%;
+}
+
+ul.subnav {
+	float: left;
+}
+
+.nav-menu6,
+.nav-menu5,
+.nav-menu4,
+.nav-menu3,
+.nav-menu2,
+.nav-menu1 {
+	width: 9%;
+	position: relative;
+	float: left;
+	margin: 1% 0 0 -1%;
+}
+
+.nav-menu2 {
+	width: 12%;
+	margin: 1% 0 0 2%;
+}
+
+.nav-menu3 {
+	width: 16%;
+	margin: 1% 0 0 2%;
+}
+
+.nav-menu4 {
+	width: 12%;
+	margin: 1% 0 0 20%;
+}
+
+.nav-menu5 {
+	width: 9%;
+	margin: 1% 0 0 2%;
+}
+
+.nav-menu6 {
+	width: 14%;
+	margin: 1% 0 0 2%;
+}
+
+.nav-menu6 ul.ul-menu-nav6,
+.nav-menu5 ul.ul-menu-nav5,
+.nav-menu4 ul.ul-menu-nav4,
+.nav-menu3 ul.ul-menu-nav3,
+.nav-menu2 ul.ul-menu-nav2,
+.nav-menu1 ul.ul-menu-nav {
+	margin: 1% 0 0 7%;
+	padding: 0; 
+	list-style: none outside none;
+}
+
+.nav-menu6 ul.ul-menu-nav6 li.li-fcontact,
+.nav-menu5 ul.ul-menu-nav5 li.li-fcursos,
+.nav-menu4 ul.ul-menu-nav4 li.li-fexpo,
+.nav-menu3 ul.ul-menu-nav3 li.li-fondos,
+.nav-menu2 ul.ul-menu-nav2 li.li-fpaco,
+.nav-menu1 ul.ul-menu-nav li.li-fgravura, 
+.nav-menu1 ul.ul-menu-nav li {
+	float: left;
+	width: 100%;
+}
+
+.nav-menu6 ul.ul-menu-nav6 li.li-fcontact a,
+.nav-menu5 ul.ul-menu-nav5 li.li-fcursos a,
+.nav-menu4 ul.ul-menu-nav4 li.li-fexpo a,
+.nav-menu3 ul.ul-menu-nav3 li.li-fondos a,
+.nav-menu2 ul.ul-menu-nav2 li.li-fpaco a,
+.nav-menu1 ul.ul-menu-nav li.li-fgravura a, 
+.nav-menu1 ul.ul-menu-nav li a {
+	color: #737373;
+	text-decoration: none;
+}
+
+.nav-menu6 ul.ul-menu-nav6 li.li-fcontact a:hover,
+.nav-menu5 ul.ul-menu-nav5 li.li-fcursos a:hover,
+.nav-menu4 ul.ul-menu-nav4 li.li-fexpo a:hover,
+.nav-menu3 ul.ul-menu-nav3 li.li-fondos a:hover,
+.nav-menu2 ul.ul-menu-nav2 li.li-fpaco a:hover,
+.nav-menu1 ul.ul-menu-nav li.li-fgravura a:hover, 
+.nav-menu1 ul.ul-menu-nav li a:hover {
+	color: #732202;
+	text-decoration: none;
+}
+
+.nav-menu6 ul.ul-menu-nav6 li.li-fcontact a.li-title,
+.nav-menu5 ul.ul-menu-nav5 li.li-fcursos a.li-title,
+.nav-menu4 ul.ul-menu-nav4 li.li-fexpo a.li-title,
+.nav-menu3 ul.ul-menu-nav3 li.li-fondos a.li-title,
+.nav-menu2 ul.ul-menu-nav2 li.li-fpaco a.li-title,
+.nav-menu1 ul.ul-menu-nav li.li-fgravura a.li-title, 
+.nav-menu1 ul.ul-menu-nav li a.li-title {
+	color: #363636;
+	float: left;
+	text-decoration: none;
+}
+
+.nav-menu6 ul.ul-menu-nav6 li.li-fcontact a.li-title:hover,
+.nav-menu5 ul.ul-menu-nav5 li.li-fcursos a.li-title:hover,
+.nav-menu4 ul.ul-menu-nav4 li.li-fexpo a.li-title:hover,
+.nav-menu3 ul.ul-menu-nav3 li.li-fondos a.li-title:hover,
+.nav-menu2 ul.ul-menu-nav2 li.li-fpaco a.li-title:hover,
+.nav-menu1 ul.ul-menu-nav li.li-fgravura a.li-title:hover, 
+.nav-menu1 ul.ul-menu-nav li a.li-title:hover {
+	color: #524B2E;
+	text-decoration: none;
+	padding-bottom: 5px;
+	border-bottom: 4px solid #D4B348;
+}
+
+/*.nav-menu6 ul.ul-menu-nav6 li.li-fcontact img,
+.nav-menu5 ul.ul-menu-nav5 li.li-fcursos img,
+.nav-menu4 ul.ul-menu-nav4 li.li-fexpo img,
+.nav-menu3 ul.ul-menu-nav3 li.li-fondos img,
+.nav-menu2 ul.ul-menu-nav2 li.li-fpaco img,
+.nav-menu1 ul.ul-menu-nav li.li-fgravura img, 
+.nav-menu1 ul.ul-menu-nav li img {
+	cursor: pointer;
+	width: 18px;
+	height: 11px;
+}
+*/
+.nav-title {
+	float: left;
+	margin-bottom: 7%;
+}
+
+.footer-cont,
+.video-cont {
+	width: 100%;
+	float: left;
+	position: relative;
+	height: auto;
+	margin: 7% 0 0 0;
+}
+
+.footer-cont {
+	background: #FFF;
+	padding: 6px 0;
+	background: none repeat scroll 0 0 #AC9F7D;
+    border-bottom: 4px solid #A89657;
+    float: left;
+    height: auto;
+    margin: 1% 0 0 1%;
+    position: relative;
+    width: 98%;
+    z-index: 1;
+}
+
+.social-icon {
+	float: left;
+	width: 25%;
+	margin: 17% 3% 0 0;
+	cursor: pointer;
+	border-bottom: 1px solid #B29B53;
+    border-right: 1px solid #D4B348;
+}
+
+.copy {
+	color: #FFFFFF;
+    float: left;
+    padding-top: 4px;
+    text-align: center;
+    width: 87%;
+}
+
+.copy a {
+	color: #F8E1B8;
+	text-decoration: none;
+}
+
+
+
+
+
+
